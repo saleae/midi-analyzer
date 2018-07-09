@@ -25,3 +25,5 @@ if(MSVC)
 else()
     install(TARGETS midi_analyzer LIBRARY DESTINATION ".")
 endif()
+
+set_post_build_destination(midi_analyzer)
