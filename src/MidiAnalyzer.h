@@ -6,7 +6,7 @@
 #include "MidiSimulationDataGenerator.h"
 
 class MidiAnalyzerSettings;
-class ANALYZER_EXPORT MidiAnalyzer : public Analyzer2
+class MidiAnalyzer : public Analyzer2
 {
 public:
 	MidiAnalyzer();

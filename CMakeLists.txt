@@ -17,13 +17,4 @@ src/MidiSimulationDataGenerator.cpp
 src/MidiSimulationDataGenerator.h
 )
 
-add_library(midi_analyzer SHARED ${SOURCES})
-target_link_libraries(midi_analyzer PRIVATE Saleae::AnalyzerSDK)
-
-if(MSVC)
-    install(TARGETS midi_analyzer RUNTIME DESTINATION "Analyzers")
-else()
-    install(TARGETS midi_analyzer LIBRARY DESTINATION "Analyzers")
-endif()
-
-set_post_build_destination(midi_analyzer)
+add_analyzer_plugin(midi_analyzer SOURCES ${SOURCES})
