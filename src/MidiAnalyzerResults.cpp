@@ -595,7 +595,7 @@ void MidiAnalyzerResults::results( enum MidiFrameType mFrameType, union stash mS
     //	Command, Data,
     //	NoteOff, NoteOn, Aftertouch, ContinuousController, PatchChange, ChannelPressure, PitchBend,
     //	BeginSystemExclusiveMessage, MIDITimeCodeQuarterFrame, SongPositionPointer, SongSelect, F4, F5, TuneRequest,
-    //EndSystemExclusiveMessage, 	TimingClock, Start, Continue, Stop, FD, ActiveSensing, SystemReset
+    // EndSystemExclusiveMessage, 	TimingClock, Start, Continue, Stop, FD, ActiveSensing, SystemReset
 }
 
 char* MidiAnalyzerResults::stringResults( enum MidiFrameType mFrameType, union stash mStash1 )
